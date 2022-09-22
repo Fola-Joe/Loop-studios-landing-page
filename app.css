@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, img {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My code */
+html {
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+header {
+    background-image: url(images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 13.5rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1.5rem 10rem;
+}
+nav ul {
+    display: none;
+}
+.header-img img {
+    width: 9.5rem;
+}
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding: 1.5rem;
+    border: 2px solid white;
+}
+
+.container {
+    width: 100%;
+    margin: 5rem 0 3rem;
+    text-align: center;
+}
+.interactive-img {
+    margin-bottom: 2rem;
+}
+.interactive {
+    margin: 0 1.5rem;
+}
+.interactive img {
+    width: 100%;
+}
+.interactive h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.interactive p {
+    font-family: 'Alata', sans-serif;
+    color: hsl(0, 0%, 55%);
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3rem 0 3.5rem;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.footer-img  {
+    display: flex;
+    justify-content: center;
+}
