@@ -119,18 +119,33 @@ h1 {
 
 
 footer {
+    font-family: 'Alata', sans-serif;
     width: 100%;
     background-color: black;
     color: white;
     text-align: center;
-    padding: 3rem 0 3.5rem;
+    padding: 3rem 0 4rem;
 }
 .icons {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 .footer-img  {
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
+}
+.footer-img img {
+    width: 40%;
+}
+footer li {
+    margin-bottom: 1.5rem;
+}
+.footer-left {
+    margin-bottom: 3rem;
+}
+.footer-right p {
+    opacity: 0.5;
 }
