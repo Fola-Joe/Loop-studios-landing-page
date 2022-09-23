@@ -68,7 +68,7 @@ header {
 }
 
 
-.mobile-menu-nav {
+.mobile-menu {
     display: none;
 }
 
@@ -210,13 +210,19 @@ footer li {
         top: 0;
         left: -100%;
         width: 100%;
-        min-height: 100vh;
+        height: 100vh;
         background-color: black;
         padding: 0;
         display: flex;
         align-items: center;
         color: white;
     }
+    .mobile-menu.active {
+        left: 0;
+    }
+    .container.active, footer.active {
+        display: none;
+    } 
     .mobile-menu-nav {
         display: flex;
         position: absolute;
