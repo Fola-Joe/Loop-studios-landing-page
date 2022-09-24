@@ -68,7 +68,7 @@ header {
 }
 
 
-.mobile-menu {
+.mobile-menu-nav {
     display: none;
 }
 
@@ -204,7 +204,7 @@ footer li {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
     .mobile-menu {
         position: fixed;
         top: 0;
@@ -220,9 +220,12 @@ footer li {
     .mobile-menu.active {
         left: 0;
     }
-    .container.active, footer.active {
+    .interactive-desktop {
         display: none;
-    } 
+    }
+    /* .container.active, footer.active {
+        display: none;
+    }  */
     .mobile-menu-nav {
         display: flex;
         position: absolute;
@@ -250,5 +253,77 @@ footer li {
     }
     .open-menu img {
         display: block;
+    }
+}
+
+@media screen and (min-width: 426px) {
+    header {
+        background-image: url(images/desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .interactive-mobile {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    br {
+        display: none;
+    }
+    .open-menu {
+        display: none;
+    }
+    header > nav {
+        margin: 2.75rem 10rem 7rem;
+    }
+    .header-img img {
+        width: 12.5rem;
+    }
+    .mobile-menu ul {
+        font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        font-size: 1.1rem;
+        color: white;
+    }
+    header h1 {
+        margin: 0 10rem;
+        font-size: 4rem;
+        max-width: 35rem;
+        padding: 2.5rem;
+    }
+
+    .container {
+        position: relative;
+        margin-top: 10rem;
+    }
+    .interactive {
+        /* display: grid;
+        grid-template-columns: 1.1fr 0.9fr; */
+        /* align-items: flex-end; */
+        margin: 0 10rem 10rem;
+    }
+    .interactive-img {
+        /* width: 60%; */
+        margin-bottom: 0;
+    }
+    .interactive > section {
+        /* width: 30rem; */
+        text-align: left;
+        padding: 5rem;
+        position: absolute;
+        right: 7rem;
+        top: 10.5rem;
+        background-color: white;
+    }
+    .interactive h2 {
+        font-size: 3rem;
+    }
+    .interactive p {
+        font-size: 1rem;
+        
     }
 }
