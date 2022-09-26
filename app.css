@@ -126,6 +126,7 @@ h1 {
     color: hsl(0, 0%, 55%);
     line-height: 1.5;
     font-size: 0.9rem;
+    margin: 0 2rem;
 }
 
 .images {
@@ -137,27 +138,27 @@ h1 {
     text-transform: uppercase;
     margin-bottom: 2.5rem;
 }
-.img-1 {
+.images-section > div {
     position: relative;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
 }
-.img-1 img {
+.images-section img {
     width: 100%;
 }
-.img-1 h3 {
+.images-section h3 {
     position: absolute;
     text-align: left;
     left: 1.2rem;
     bottom: 1.2rem;
     color: white;
     font-size: 1.5rem;
-    margin-right: 50%;
+    /* margin-right: 50%; */
 }
 .images-section {
     margin-bottom: 2rem;
 }
-.btn {
+.btn-2 {
     font-family: 'Alata', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
@@ -254,6 +255,10 @@ footer li {
     .open-menu img {
         display: block;
     }
+    .btn-1 {
+        display: none;
+    }
+    .desktop-img {display: none;}
 }
 
 @media screen and (min-width: 426px) {
@@ -268,15 +273,15 @@ footer li {
 }
 
 
-@media screen and (min-width: 1025px) {
-    br {
+@media screen and (min-width: 1024px) {
+    /* br {
         display: none;
-    }
-    .open-menu {
+    } */
+    .open-menu, .btn-2, .mobile-img {
         display: none;
     }
     header > nav {
-        margin: 2.75rem 10rem 7rem;
+        margin: 1.75rem 7.5rem 7rem;
     }
     .header-img img {
         width: 12.5rem;
@@ -286,11 +291,11 @@ footer li {
         display: flex;
         flex-direction: row;
         gap: 2rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: white;
     }
     header h1 {
-        margin: 0 10rem;
+        margin: 0 7.5rem;
         font-size: 4rem;
         max-width: 35rem;
         padding: 2.5rem;
@@ -301,22 +306,22 @@ footer li {
         margin-top: 10rem;
     }
     .interactive {
-        /* display: grid;
-        grid-template-columns: 1.1fr 0.9fr; */
+        display: grid;
+        grid-template-columns: 1.5fr 0.9fr;
         /* align-items: flex-end; */
-        margin: 0 10rem 10rem;
+        margin: 0 7.5rem 10rem;
     }
     .interactive-img {
         /* width: 60%; */
         margin-bottom: 0;
     }
     .interactive > section {
-        /* width: 30rem; */
+        max-width: 30rem;
         text-align: left;
         padding: 5rem;
         position: absolute;
         right: 7rem;
-        top: 10.5rem;
+        top: 11.5rem;
         background-color: white;
     }
     .interactive h2 {
@@ -325,5 +330,39 @@ footer li {
     .interactive p {
         font-size: 1rem;
         
+    }
+    .images {
+        margin: 0 7.5rem;
+    }
+    .see-all {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+    }
+    .btn-1 {
+        font-family: 'Alata', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        font-size: 1rem;
+        padding: 0.5rem;
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+        width: 10rem;
+    }
+    .images-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+    .images-section > div {
+        margin: 0;
+    }
+    .images-section h3 {
+        left: 1.5rem;
+        bottom: 1.5rem;
+        font-size: 1.75rem;
+        /* margin-right: 25%; */
     }
 }
