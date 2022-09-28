@@ -212,6 +212,30 @@ footer li {margin-bottom: 1.5rem;}
         background-size: cover;
     }
     .interactive-mobile {display: none;}
+    .open-menu, .btn-2, .mobile-img {display: none;}
+    .mobile-menu ul {
+        font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+        flex-direction: row;
+        color: white;
+    }
+    .btn-1 {
+        font-family: 'Alata', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        font-size: 0.85rem;
+        padding: 0.35rem;
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+        width: 10rem;
+    }
+    .see-all {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .images-section > div {margin: 0;}
 }
 
 @media screen and (min-width: 426px) and (max-width: 540px) {
@@ -223,17 +247,10 @@ footer li {margin-bottom: 1.5rem;}
     footer li{font-size: 1.2rem;}
 }
 
-@media screen and (min-width: 541px) and (max-width: 770px) {
+@media screen and (min-width: 541px) and (max-width: 825px) {
     .open-menu, .btn-2, .mobile-img {display: none;}
     header > nav {margin: 0 4rem 7rem;}
-    .mobile-menu ul {
-        font-family: 'Josefin Sans', sans-serif;
-        display: flex;
-        flex-direction: row;
-        gap: 1.25rem;
-        font-size: 0.75rem;
-        color: white;
-    }
+    .mobile-menu ul {gap: 1.25rem; font-size: 0.75rem;}
     header h1 {
         margin: 0 4rem;
         font-size: 3rem;
@@ -268,37 +285,87 @@ footer li {margin-bottom: 1.5rem;}
         grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
     }
-    .images-section > div {margin: 0;}
-    .see-all {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 3rem;
-    }
-    .btn-1 {
-        font-family: 'Alata', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 0.3rem;
-        font-size: 0.85rem;
-        padding: 0.35rem;
-        border: 1px solid black;
-        color: black;
-        background-color: white;
-        width: 10rem;
-    }
+    .images-section h3 {font-size: 2rem;}
+    .images h2 {font-size: 1.8rem;}
 }
 
-@media screen and (min-width: 1024px) {
-    .open-menu, .btn-2, .mobile-img {display: none;}
+@media screen and (min-width: 826px) and (max-width: 1250px) {
+    header > nav {margin: 0.5rem 5rem 7rem;}
+    .mobile-menu ul {gap: 1.5rem;}
+    header h1 {
+        font-size: 3rem;
+        max-width: 30rem;
+        padding: 2rem;
+        margin: 0 5rem;
+    }
+    .images {margin: 0 5rem;}
+    .images-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+    .container {
+        position: relative;
+        margin-top: 10rem;
+    }
+    .interactive {margin: 0 5rem 10rem;}
+    .interactive-img {
+        width: 65%;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+    .interactive > section {
+        width: 30%;
+        text-align: left;
+        padding: 3rem;
+        position: absolute;
+        right: 12%;
+        top: 13%;
+        background-color: white;
+    }
+    .interactive h2 {font-size: 1.7rem;}
+    .interactive p {font-size: 0.7rem; margin: 0;}
+    .container {margin-bottom: 10rem;}
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 3rem;
+    }
+    footer ul {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.8rem;
+    }
+    .icons {justify-content: flex-end; margin-bottom: 2rem;}
+    footer ul>li {margin: 0;}
+    .footer-img {justify-content: flex-start;}
+    .footer-img img {width: 9rem;}
+    .footer-left {margin: 0 0 0 5rem; text-align: left;}
+    .footer-right {margin: 0 5rem 0 0; text-align: right;}
+    .footer-right p {font-size: 0.85rem;}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1250px) {
+    .interactive > section {
+        width: 30%;
+        text-align: left;
+        padding: 4.5rem;
+        position: absolute;
+        right: 8.5%;
+        top: 10%;
+        background-color: white;
+    }
+    .interactive h2 {font-size: 2rem;}
+    .interactive p {font-size: 1rem; margin: 0;}
+}
+
+@media screen and (min-width: 1251px) {
     header > nav {margin: 1.75rem 7.5rem 7rem;}
     .header-img img {width: 12.5rem;}
     .mobile-menu ul {
-        font-family: 'Josefin Sans', sans-serif;
-        display: flex;
-        flex-direction: row;
         gap: 2rem;
         font-size: 1rem;
-        color: white;
     }
     header h1 {
         margin: 0 7.5rem;
@@ -333,29 +400,15 @@ footer li {margin-bottom: 1.5rem;}
     }
     .container {margin-bottom: 10rem;}
     .images {margin: 0 7.5rem;}
-    .see-all {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 3rem;
-    }
     .btn-1 {
-        font-family: 'Alata', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 0.3rem;
         font-size: 1rem;
         padding: 0.5rem;
-        border: 1px solid black;
-        color: black;
-        background-color: white;
-        width: 10rem;
     }
     .images-section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2rem;
     }
-    .images-section > div {margin: 0;}
     .images-section h3 {
         left: 2rem;
         bottom: 2rem;
@@ -369,7 +422,6 @@ footer li {margin-bottom: 1.5rem;}
     footer ul {
         display: flex;
         gap: 1rem;
-        /* margin: 0; */
     }
     .icons {justify-content: flex-end; margin-bottom: 2rem;}
     footer ul>li {margin: 0;}
