@@ -428,6 +428,7 @@ button:hover {
     }
     .container {margin-bottom: 10rem;}
     .images {margin: 0 7.5rem;}
+    .images h2 {font-size: 2.15rem;}
     .btn-1 {
         font-size: 1rem;
         padding: 0.5rem;
