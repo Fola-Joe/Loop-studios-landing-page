@@ -45,12 +45,8 @@ table {
 }
 
 /* My code */
-html {
-    box-sizing: border-box;
-}
-body {
-    min-height: 100vh;
-}
+html {box-sizing: border-box;}
+body {min-height: 100vh;}
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -66,12 +62,7 @@ header {
     padding-top: 2.5rem;
     padding-bottom: 13.5rem;
 }
-
-
-.mobile-menu-nav {
-    display: none;
-}
-
+.mobile-menu-nav {display: none;}
 header > nav {
     display: flex;
     align-items: center;
@@ -79,12 +70,7 @@ header > nav {
     margin: 0 1.5rem 10rem;
     position: relative;
 }
-/* nav ul {
-    display: none;
-} */
-.header-img img {
-    width: 9.5rem;
-}
+.header-img img {width: 9.5rem;}
 h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
@@ -95,21 +81,14 @@ h1 {
     padding: 1.5rem;
     border: 2px solid white;
 }
-
 .container {
     width: 100%;
     margin: 5rem 0 6rem;
     text-align: center;
 }
-.interactive {
-    margin: 0 1.5rem 6rem;
-}
-.interactive-img {
-    margin-bottom: 2rem;
-}
-.interactive img {
-    width: 100%;
-}
+.interactive {margin: 0 1.5rem 6rem;}
+.interactive-img {margin-bottom: 2rem;}
+.interactive img {width: 100%;}
 .interactive h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.9rem;
@@ -123,7 +102,6 @@ h1 {
     font-size: 0.9rem;
     margin: 0 2rem;
 }
-
 .images {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0 1.5rem;
@@ -138,9 +116,7 @@ h1 {
     margin-bottom: 1.5rem;
     text-transform: uppercase;
 }
-.images-section img {
-    width: 100%;
-}
+.images-section img {width: 100%;}
 .images-section h3 {
     position: absolute;
     text-align: left;
@@ -148,11 +124,8 @@ h1 {
     bottom: 1.2rem;
     color: white;
     font-size: 1.5rem;
-    /* margin-right: 50%; */
 }
-.images-section {
-    margin-bottom: 2rem;
-}
+.images-section {margin-bottom: 2rem;}
 .btn-2 {
     font-family: 'Alata', sans-serif;
     text-transform: uppercase;
@@ -164,8 +137,6 @@ h1 {
     background-color: white;
     width: 9.5rem;
 }
-
-
 footer {
     font-family: 'Alata', sans-serif;
     width: 100%;
@@ -185,28 +156,15 @@ footer {
     justify-content: center;
     margin-bottom: 2rem;
 }
-.footer-img img {
-    width: 40%;
-}
-footer li {
-    margin-bottom: 1.5rem;
-}
-.footer-left {
-    margin-bottom: 3rem;
-}
-.footer-right p {
-    opacity: 0.5;
-}
+.footer-img img {width: 40%;}
+footer li {margin-bottom: 1.5rem;}
+.footer-left {margin-bottom: 3rem;}
+.footer-right p {opacity: 0.5;}
 
 @media screen and (max-width: 374px) {
-    header h1 {
-        font-size: 1.85rem;
-    }
-    .interactive h2, .images h2 {
-        font-size: 1.75rem;
-    }
+    header h1 {font-size: 1.85rem;}
+    .interactive h2, .images h2 {font-size: 1.75rem;}
 }
-
 
 @media screen and (max-width: 540px) {
     .mobile-menu {
@@ -221,15 +179,9 @@ footer li {
         align-items: center;
         color: white;
     }
-    .mobile-menu.active {
-        left: 0;
-    }
-    .interactive-desktop {
-        display: none;
-    }
-    /* .container.active, footer.active {
-        display: none;
-    }  */
+    .mobile-menu.active {left: 0;}
+    .container.active, .footer.active {display: none;}
+    .interactive-desktop, .btn-1, .desktop-img {display: none;}
     .mobile-menu-nav {
         display: flex;
         position: absolute;
@@ -240,9 +192,7 @@ footer li {
         align-items: center;
         padding: 0 1.5rem;
     }
-    .menu-logo img {
-        width: 9.5rem;
-    }
+    .menu-logo img {width: 9.5rem;}
     .mobile-menu ul {
         font-family: 'Josefin Sans', sans-serif;
         display: flex;
@@ -252,16 +202,7 @@ footer li {
         text-transform: uppercase;
         font-size: 1.5rem;
     }
-    .mobile-menu li {
-        margin-bottom: 1.5rem;
-    }
-    .open-menu img {
-        display: block;
-    }
-    .btn-1 {
-        display: none;
-    }
-    .desktop-img {display: none;}
+    .mobile-menu li {margin-bottom: 1.5rem;}
 }
 
 @media screen and (min-width: 541px) {
@@ -270,37 +211,23 @@ footer li {
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .interactive-mobile {
-        display: none;
-    }
+    .interactive-mobile {display: none;}
 }
 
 @media screen and (min-width: 426px) and (max-width: 550px) {
-    header h1 {
-        font-size: 3rem;
-    }
-    .header-img img, .menu-logo img {
-        width: 12rem;
-    }
-    .interactive h2, .images h2 {
-        font-size: 2.2rem;
-    }
+    header h1 {font-size: 3rem;}
+    .header-img img, .menu-logo img {width: 12rem;}
+    .interactive h2, .images h2 {font-size: 2.2rem;}
+    .images-section h3 {font-size: 1.8rem;}
+    .interactive p {font-size: 1.2rem;}
+    footer li{font-size: 1.2rem;}
 }
 
 
 @media screen and (min-width: 1024px) {
-    /* br {
-        display: none;
-    } */
-    .open-menu, .btn-2, .mobile-img {
-        display: none;
-    }
-    header > nav {
-        margin: 1.75rem 7.5rem 7rem;
-    }
-    .header-img img {
-        width: 12.5rem;
-    }
+    .open-menu, .btn-2, .mobile-img {display: none;}
+    header > nav {margin: 1.75rem 7.5rem 7rem;}
+    .header-img img {width: 12.5rem;}
     .mobile-menu ul {
         font-family: 'Josefin Sans', sans-serif;
         display: flex;
@@ -315,14 +242,11 @@ footer li {
         max-width: 35rem;
         padding: 2.5rem;
     }
-
     .container {
         position: relative;
         margin-top: 10rem;
     }
-    .interactive {
-        margin: 0 7.5rem 10rem;
-    }
+    .interactive {margin: 0 7.5rem 10rem;}
     .interactive-img {
         width: 65%;
         display: flex;
@@ -338,21 +262,13 @@ footer li {
         top: 12%;
         background-color: white;
     }
-    .interactive h2 {
-        font-size: 2.75rem;
-    }
+    .interactive h2 {font-size: 2.75rem;}
     .interactive p {
         font-size: 1rem;
         margin: 0;
     }
-
-    .container {
-        margin-bottom: 10rem;
-    }
-
-    .images {
-        margin: 0 7.5rem;
-    }
+    .container {margin-bottom: 10rem;}
+    .images {margin: 0 7.5rem;}
     .see-all {
         display: flex;
         justify-content: space-between;
@@ -375,15 +291,12 @@ footer li {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2rem;
     }
-    .images-section > div {
-        margin: 0;
-    }
+    .images-section > div {margin: 0;}
     .images-section h3 {
         left: 2rem;
         bottom: 2rem;
         font-size: 2rem;
     }
-
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -395,13 +308,9 @@ footer li {
         /* margin: 0; */
     }
     .icons {justify-content: flex-end; margin-bottom: 2rem;}
-    footer ul>li {
-        margin: 0;
-    }
+    footer ul>li {margin: 0;}
     .footer-img {justify-content: flex-start;}
-    .footer-img img {
-        width: 9rem;
-    }
+    .footer-img img {width: 9rem;}
     .footer-left {
         margin: 0 0 0 7.5rem;
         text-align: left;
