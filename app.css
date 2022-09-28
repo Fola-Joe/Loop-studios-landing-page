@@ -214,7 +214,7 @@ footer li {margin-bottom: 1.5rem;}
     .interactive-mobile {display: none;}
 }
 
-@media screen and (min-width: 426px) and (max-width: 550px) {
+@media screen and (min-width: 426px) and (max-width: 540px) {
     header h1 {font-size: 3rem;}
     .header-img img, .menu-logo img {width: 12rem;}
     .interactive h2, .images h2 {font-size: 2.2rem;}
@@ -223,6 +223,70 @@ footer li {margin-bottom: 1.5rem;}
     footer li{font-size: 1.2rem;}
 }
 
+@media screen and (min-width: 541px) and (max-width: 770px) {
+    .open-menu, .btn-2, .mobile-img {display: none;}
+    header > nav {margin: 0 4rem 7rem;}
+    .mobile-menu ul {
+        font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+        font-size: 0.75rem;
+        color: white;
+    }
+    header h1 {
+        margin: 0 4rem;
+        font-size: 3rem;
+        max-width: 30rem;
+        padding: 2rem;
+    }
+    .container {
+        position: relative;
+        margin-top: 8rem;
+    }
+    .interactive {margin: 0 4rem 8rem;}
+    .interactive-img {
+        width: 65%;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+    .interactive > section {
+        width: 30%;
+        text-align: left;
+        padding: 2rem;
+        position: absolute;
+        right: 10%;
+        top: 3.5%;
+        background-color: white;
+    }
+    .interactive h2 {font-size: 1.25rem;}
+    .interactive p {font-size: 0.65rem; margin: 0;}
+    .images {margin: 0 4rem;}
+    .images-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    .images-section > div {margin: 0;}
+    .see-all {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+    }
+    .btn-1 {
+        font-family: 'Alata', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        font-size: 0.85rem;
+        padding: 0.35rem;
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+        width: 10rem;
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .open-menu, .btn-2, .mobile-img {display: none;}
