@@ -72,11 +72,6 @@ header {
     display: none;
 }
 
-
-
-
-
-
 header > nav {
     display: flex;
     align-items: center;
@@ -203,9 +198,17 @@ footer li {
     opacity: 0.5;
 }
 
+@media screen and (max-width: 374px) {
+    header h1 {
+        font-size: 1.85rem;
+    }
+    .interactive h2, .images h2 {
+        font-size: 1.75rem;
+    }
+}
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 540px) {
     .mobile-menu {
         position: fixed;
         top: 0;
@@ -261,7 +264,7 @@ footer li {
     .desktop-img {display: none;}
 }
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 541px) {
     header {
         background-image: url(images/desktop/image-hero.jpg);
         background-repeat: no-repeat;
@@ -269,6 +272,18 @@ footer li {
     }
     .interactive-mobile {
         display: none;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 550px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    .header-img img, .menu-logo img {
+        width: 12rem;
+    }
+    .interactive h2, .images h2 {
+        font-size: 2.2rem;
     }
 }
 
